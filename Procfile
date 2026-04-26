@@ -1,0 +1,1 @@
+web: gunicorn send_mail:app --bind 0.0.0.0:$PORT
