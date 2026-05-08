@@ -203,6 +203,46 @@ body {
     font-size: 28px;
 }
 
+/* НОВЫЙ БЛОК ВЫПЛАТ В HERO */
+.payment-summary {
+    background: rgba(0,0,0,0.75);
+    padding: 30px;
+    border-radius: 20px;
+    margin: 30px 0;
+}
+
+.payment-summary h2 {
+    color: #ffd700;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.payment-summary .total-amount {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #ffd700;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.payment-card {
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.payment-card .amount {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.payment-card.highlight .amount {
+    color: #ffd700;
+}
+
 /* ---------- БЕЛЫЙ БЛОК ---------- */
 .white-section {
     padding: 80px 0;
@@ -274,6 +314,87 @@ body {
 .sub-heading {
     font-size: 20px;
     color: var(--text-light);
+}
+
+/* Подзаголовки секций */
+.section-subtitle {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin: 40px 0 20px 0;
+    border-left: 5px solid var(--accent-color);
+    padding-left: 20px;
+}
+
+.lead-text {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: var(--text-color);
+}
+
+/* Карточки подразделений в белом блоке */
+.white-section .card {
+    border: 1px solid #eee;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.white-section .card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.white-section .card-body {
+    padding: 25px;
+}
+
+.white-section .card-body i {
+    margin-bottom: 15px;
+}
+
+.white-section .card-body ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Блок с требованиями */
+.requirements-block {
+    background: var(--light-bg);
+    padding: 30px;
+    border-radius: 15px;
+    margin: 30px 0;
+}
+
+.requirements-block ul li {
+    margin-bottom: 10px;
+}
+
+/* Финансовые условия в три колонки */
+.finance-grid .finance-item {
+    background: var(--white);
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.finance-grid .finance-item:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-hover);
+}
+
+.finance-grid .finance-item i {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.finance-grid .finance-item h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
 }
 
 /* Блок с поездом */
@@ -398,7 +519,7 @@ body {
 }
 
 .help-section .card i {
-    font-size: 52px;
+    font-size: 30px;
     margin-bottom: 15px;
 }
 
@@ -406,6 +527,33 @@ body {
     font-size: 22px;
     font-weight: bold;
     margin: 15px 0;
+}
+
+/* Блок преимуществ администрации */
+.admin-benefits-card {
+    border: 2px solid #ffc107;
+    border-radius: 15px;
+    background: var(--white);
+}
+
+.admin-benefits-card .card-header {
+    background: linear-gradient(135deg, #ffc107, #ff8c00);
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 13px 13px 0 0;
+}
+
+.admin-list li {
+    line-height: 2.2;
+    margin-bottom: 8px;
+}
+
+.admin-list i {
+    font-size: 0.9rem;
+    margin-right: 10px;
+    color: var(--success-color);
 }
 
 /* ---------- ФОРМА ---------- */
@@ -457,6 +605,21 @@ body {
     font-size: 13px;
     color: var(--text-light);
     margin-top: 5px;
+}
+
+/* Чекбокс согласия */
+.form-check-input:checked {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.form-check-label a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.form-check-label a:hover {
+    text-decoration: underline;
 }
 
 /* ---------- КОНТАКТЫ И КАРТА ---------- */
@@ -599,6 +762,18 @@ footer p {
     .hero-highlight h3 {
         font-size: 36px;
     }
+    
+    .payment-summary .total-amount {
+        font-size: 3rem;
+    }
+    
+    .payment-card .amount {
+        font-size: 1.5rem;
+    }
+    
+    .section-subtitle {
+        font-size: 24px;
+    }
 }
 
 /* Мобильные устройства */
@@ -668,6 +843,18 @@ footer p {
         width: 100%;
         text-align: center;
     }
+    
+    .payment-summary {
+        padding: 20px;
+    }
+    
+    .payment-summary .total-amount {
+        font-size: 2.5rem;
+    }
+    
+    .section-subtitle {
+        font-size: 22px;
+    }
 }
 
 /* Очень маленькие экраны */
@@ -711,9 +898,17 @@ footer p {
     .highlight-number {
         font-size: 26px;
     }
+    
+    .payment-summary .total-amount {
+        font-size: 2rem;
+    }
+    
+    .payment-card .amount {
+        font-size: 1.2rem;
+    }
 }
 
-/* ---------- ДЛЯ ЭКРАНОВ ДО 576px ---------- */
+/* Для экранов до 576px */
 @media (max-width: 576px) {
     .info-column {
         flex: 0 0 100%;
@@ -726,7 +921,7 @@ footer p {
     }
 }
 
-/* ---------- ДЛЯ ЭКРАНОВ БОЛЬШЕ 993px ---------- */
+/* Для экранов больше 993px */
 @media (min-width: 993px) {
     .mobile-header, .mobile-menu-btn {
         display: none !important;
@@ -751,4 +946,23 @@ footer p {
 
 .hero-content, .white-section, .help-section, .form-container, .contacts-section {
     animation: fadeInUp 0.6s ease-out;
+}
+
+/* Дополнительные стили для списков с галочками */
+.list-check {
+    list-style: none;
+    padding-left: 0;
+}
+
+.list-check li {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.list-check li i {
+    font-size: 0.9rem;
+    color: var(--success-color);
+    flex-shrink: 0;
 }

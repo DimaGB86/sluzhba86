@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Служба по Контракту — Кондинский район ХМАО</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Наши стили -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+    <!-- ====== ШАПКА (белая, sticky) ====== -->
+    <header class="header bg-white">
+        <div class="container">
+            <!-- Мобильное меню -->
+            <div class="mobile-header">
+                <div class="logo">🇷🇺 Служба</div>
+                <button class="mobile-menu-btn" onclick="toggleMenu()">
+                    <i class="bi bi-list"></i>
+                </button>
+            </div>
+            
+            <!-- Основное меню -->
+            <div class="nav-menu" id="navMenu">
+                <div class="row align-items-center">
+                    <!-- Логотип и лозунг (десктоп) -->
+                    <div class="col-lg-3 col-md-12 desktop-only">
+                        <div class="logo">🇷🇺 Служба</div>
+                        <div class="slogan">Ваши проблемы — наши заботы!</div>
+                    </div>
+                    
+                    <!-- Телефон и Email -->
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 info-column">
+                        <div class="info-item">
+                            <i class="bi bi-telephone-fill"></i>
+                            <a href="tel:+79505171630">+7 950 517 16 30</a>
+                        </div>
+                        <div class="info-item">
+                            <i class="bi bi-envelope-fill"></i>
+                            <a href="mailto:Novikov.K.S@mail.ru">Novikov.K.S@mail.ru</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Адрес -->
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 info-column">
+                        <div class="info-item">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <span>пгт.Междуреченский<br>ул.Днепропетровская 10<br>Кондинский р-н</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Кнопка подачи заявки -->
+                    <div class="col-lg-3 col-md-4 col-sm-12 text-lg-end text-md-start text-sm-start button-column">
+                        <a href="#application-form" class="btn-apply">
+                            <i class="bi bi-pencil-square"></i> Подать заявку
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ====== ГЕРОЙ-СЕКЦИЯ (фоновое изображение) ====== -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Служба по Контракту</h1>
+                
+                <p class="hero-text">
+                    Мы предлагаем вам самые выгодные условия заключения контракта в России.
+                </p>
+                
+                <div class="hero-highlight">
+                    <h3>3 200 000 рублей</h3>
+                    <p style="font-size: 18px;">
+                        После заключения контракта через военкомат Кондинского района ХМАО<br>
+                        вы получите сразу + компенсацию проезда.
+                    </p>
+                </div>
+                
+                <p style="font-size: 18px; margin: 20px 0;">
+                    Если по окончании контракта он продлевается, регион выплатит дополнительно<br>
+                    <strong style="color: var(--accent-color); font-size: 24px;">по 900 000 рублей за каждый год службы</strong>
+                </p>
+                
+                <div class="hero-stats">
+                    <h2>ЗАРАБОТНАЯ ПЛАТА В ЗОНЕ СВО СОСТАВЛЯЕТ ОТ 210 ТЫСЯЧ РУБЛЕЙ В МЕСЯЦ</h2>
+                    <p style="font-size: 20px;">(В СРЕДНЕМ 240 000)</p>
+                </div>
+                
+                <div style="margin: 30px 0;">
+                    <h3 style="color: var(--accent-color);">ПРИНИМАЕМ ОТНОШЕНИЯ ОТ ЧАСТЕЙ ЦВО!</h3>
+                </div>
+                
+                <div style="margin: 40px 0;">
+                    <h3 style="color: var(--accent-color);">
+                        Суммарная выгода может превысить 15 520 000 ₽
+                    </h3>
+                    <p>с учетом списания долгов и других социальных мер поддержки героев России.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== БЕЛЫЙ БЛОК С ИНФОРМАЦИЕЙ ====== -->
+    <section class="white-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <!-- Основной текст -->
+                    <div class="info-main-text">
+                        <p>
+                            Для получения региональных льгот не обязательно быть прописанным в регионе, 
+                            достаточно приехать и заключить контракт в военкомате Кондинского района ХМАО. 
+                            Фактическое проживание и место регистрации не имеют значения.
+                        </p>
+                    </div>
+                    
+                    <!-- Преимущества в две колонки -->
+                    <div class="advantages-grid">
+                        <div class="advantage-item">
+                            <span class="advantage-marker">✓</span>
+                            <span>Имеем возможность принимать без военного билета</span>
+                        </div>
+                        <div class="advantage-item">
+                            <span class="advantage-marker">✓</span>
+                            <span>СНОВА РАБОТАЕМ С ОТНОШЕНИЯМИ ОТ ЦЕНТРАЛЬНОГО ВОЕННОГО ОКРУГА</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Заголовок с акцентом -->
+                    <div class="main-heading-wrapper">
+                        <h2 class="main-heading">
+                            ЛУЧШИЕ В СТРАНЕ УСЛОВИЯ ДЛЯ ЗАКЛЮЧЕНИЯ КОНТРАКТА
+                        </h2>
+                        <p class="sub-heading">
+                            через военкомат Кондинского района ХМАО
+                        </p>
+                    </div>
+                    
+                    <!-- Блок с поездом -->
+                    <div class="train-block">
+                        <div class="train-icon">
+                            <i class="bi bi-train-front"></i>
+                        </div>
+                        <div class="train-info">
+                            <p class="train-time">
+                                <span class="highlight-number">12 часов</span> поездом из Екатеринбурга
+                            </p>
+                            <p class="train-route">
+                                Прямой поезд №610Е «Екатеринбург – Устье-Аха»<br>
+                                Отправляется ежедневно в <strong>23:35</strong> (время местное)
+                            </p>
+                            <p class="train-location">
+                                <i class="bi bi-geo-alt"></i>
+                                <strong>Военкомат расположен в 30 метрах от станции Устье-Аха</strong>
+                            </p>
+                            <p class="train-meet">
+                                <i class="bi bi-people"></i>
+                                Сотрудники районной администрации встретят, разместят и доставят до пункта сбора
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Финансовый акцент -->
+                    <div class="finance-accent">
+                        <i class="bi bi-clock-history"></i>
+                        <span>Всего 12 часов поездом из Екатеринбурга и вы получаете <strong>совершенно иные финансовые условия!</strong></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== РАЗДЕЛ «ТАК-ЖЕ ПОМОЖЕМ ВАМ!» (серый фон) ====== -->
+    <section class="help-section">
+        <div class="container">
+            <h2 class="help-title">Так-же поможем вам!</h2>
+            
+            <div class="row justify-content-center">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-cash-stack" style="font-size: 48px; color: #28a745;"></i>
+                            <h5 class="card-title mt-3">Списание долгов</h5>
+                            <p class="card-text">до 10.000.000 ₽ без процедур банкротства</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-bank" style="font-size: 48px; color: #007bff;"></i>
+                            <h5 class="card-title mt-3">Выплаты и льготы</h5>
+                            <p class="card-text">Выплаты на детей и банковские льготы</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-shield-check" style="font-size: 48px; color: #dc3545;"></i>
+                            <h5 class="card-title mt-3">Ветеран боевых действий</h5>
+                            <p class="card-text">Оформление статуса с широким пакетом преференций</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== ФОРМА ПОДАЧИ ЗАЯВКИ ====== -->
+    <section id="application-form" class="form-container">
+        <div class="container">
+            <h2 class="text-center mb-4">Прием заявки</h2>
+            <p class="text-center mb-4" style="color: #666;">
+                <i class="bi bi-info-circle"></i> 
+                Граждане, пришедшие по записи, обслуживаются вне очереди.<br>
+                Наш секретарь свяжется с вами для подтверждения
+            </p>
+            
+            <div class="row justify-content-center">
+                <div class="col-md-5">
+                    <!-- Форма отправляется на send_mail.py -->
+                    <form id="contractForm" action="/send-form" method="POST">
+                        <div class="mb-4">
+                            <label for="last_name" class="form-label">Фамилия</label>
+                            <input type="text" class="form-control form-control-lg" id="last_name" name="last_name" placeholder="Иванов" required>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="first_name" class="form-label">Имя</label>
+                            <input type="text" class="form-control form-control-lg" id="first_name" name="first_name" placeholder="Иван" required>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="patronymic" class="form-label">Отчество</label>
+                            <input type="text" class="form-control form-control-lg" id="patronymic" name="patronymic" placeholder="Иванович">
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="phone" class="form-label">
+                                Телефон <span style="color: red;">*</span>
+                            </label>
+                            <input type="tel" class="form-control form-control-lg" id="phone" name="phone" placeholder="+7 (999) 123-45-67" required>
+                            <div class="form-text text-muted">
+                                <i class="bi bi-exclamation-circle"></i> Обязательное поле
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="city" class="form-label">Город</label>
+                            <input type="text" class="form-control form-control-lg" id="city" name="city" placeholder="Москва">
+                        </div>
+                        
+                        <div class="text-center mt-5">
+                            <button type="submit" class="btn-apply" style="padding: 12px 40px; font-size: 18px;">
+                                <i class="bi bi-send"></i> Отправить заявку
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== КОНТАКТЫ И КАРТА ====== -->
+    <section class="contacts-section">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="info-card">
+                        <h3 class="card-title">Контакты</h3>
+                        
+                        <div class="info-block">
+                            <div class="info-label">Телефон:</div>
+                            <div class="info-value">
+                                <a href="tel:+79505171630">+7 950 517 16 30</a>
+                            </div>
+                        </div>
+                        
+                        <div class="info-block">
+                            <div class="info-label">Email:</div>
+                            <div class="info-value">
+                                <a href="mailto:Novikov.K.S@mail.ru">Novikov.K.S@mail.ru</a>
+                            </div>
+                        </div>
+                        
+                        <div class="info-block">
+                            <div class="info-label">Адрес:</div>
+                            <div class="info-value address">
+                                пгт.Междуреченский<br>
+                                ул.Днепропетровская 10<br>
+                                Кондинский р-н
+                            </div>
+                        </div>
+                        
+                        <div class="info-block">
+                            <div class="info-label">Прием заявок:</div>
+                            <div class="info-value highlight">
+                                Круглосуточно
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="info-card">
+                        <div class="map-wrapper">
+                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1e3e7f3b7e6f8b7c9d8e7f6a5b4c3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f8a7b6c5&amp;source=constructor" 
+                                    width="100%" 
+                                    height="350" 
+                                    frameborder="0"
+                                    style="border:0;">
+                            </iframe>
+                        </div>
+                        <p class="map-link-wrapper">
+                            <i class="bi bi-info-circle"></i> 
+                            <a href="https://yandex.ru/maps/?text=пгт.Междуреченский%20ул.Днепропетровская%2010" 
+                               target="_blank" 
+                               class="map-link">
+                               Открыть в Яндекс Картах
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== ФУТЕР ====== -->
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2026 Служба по Контракту. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Наш скрипт -->
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>
