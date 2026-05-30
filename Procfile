@@ -1,1 +1,1 @@
-web: gunicorn send_mail:app --bind 0.0.0.0:$PORT
+web: gunicorn send_mail:app --bind 0.0.0.0:8000 --timeout 60 --limit-request-fields 50 --limit-request-field_size 8190

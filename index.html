@@ -3,57 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Служба по Контракту — ХМАО. Набор в АХМАТ: связь, инженерия, РЭБ, МАТО</title>
+    <title>Служба по Контракту — ХМАО</title>
     
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
-    <!-- Наши стили -->
-    <link rel="stylesheet" href="/assets/css/style.css">
+    
+    <!-- Подключаем отдельный CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
 
     <!-- ====== ШАПКА (белая, sticky) ====== -->
     <header class="header bg-white">
         <div class="container">
-            <div class="mobile-header">
-                <div class="logo">🇷🇺 Служба</div>
-                <button class="mobile-menu-btn" onclick="toggleMenu()">
-                    <i class="bi bi-list"></i>
-                </button>
-            </div>
-            
-            <div class="nav-menu" id="navMenu">
-                <div class="row align-items-center">
-                    <div class="col-lg-3 col-md-12 desktop-only">
-                        <div class="logo">🇷🇺 Служба</div>
-                        <div class="slogan">Ваши проблемы — наши заботы!</div>
+            <div class="row align-items-center">
+                <div class="col-lg-3 col-md-12">
+                    <div class="logo">🇷🇺 Служба</div>
+                    <div class="slogan">Ваши проблемы — наши заботы!</div>
+                </div>
+                
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="info-item">
+                        <i class="bi bi-telephone-fill"></i>
+                        <a href="tel:+79090376438">+7 909 037 64 38</a>
                     </div>
-                    
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 info-column">
-                        <div class="info-item">
-                            <i class="bi bi-telephone-fill"></i>
-                            <a href="tel:+79505171630">+7 950 517 16 30</a>
-                        </div>
-                        <div class="info-item">
-                            <i class="bi bi-envelope-fill"></i>
-                            <a href="mailto:Novikov.K.S@mail.ru">Novikov.K.S@mail.ru</a>
-                        </div>
+                    <div class="info-item">
+                        <i class="bi bi-envelope-fill"></i>
+                        <a href="mailto:Novikov.K.S@mail.ru">Novikov.K.S@mail.ru</a>
                     </div>
-                    
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 info-column">
-                        <div class="info-item">
-                            <i class="bi bi-geo-alt-fill"></i>
-                            <span>пгт.Междуреченский<br>ул.Днепропетровская 10<br>Кондинский р-н</span>
-                        </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="info-item">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <span>пгт.Междуреченский<br>ул.Днепропетровская 10<br>Кондинский р-н</span>
                     </div>
-                    
-                    <div class="col-lg-3 col-md-4 col-sm-12 text-lg-end text-md-start text-sm-start button-column">
-                        <a href="#application-form" class="btn-apply">
-                            <i class="bi bi-pencil-square"></i> Подать заявку
-                        </a>
-                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-4 col-sm-12 text-lg-end text-md-start text-sm-start">
+                    <a href="#application-form" class="btn-apply">
+                        <i class="bi bi-pencil-square"></i> Подать заявку
+                    </a>
                 </div>
             </div>
         </div>
@@ -63,42 +55,38 @@
     <section class="hero-section">
         <div class="container">
             <div class="hero-content">
-                <div class="hero-highlight">
-                    <h1 class="hero-title">Служба по Контракту</h1>
-                    <p class="hero-text" style="font-size: 1.3rem;">
-                        Мы предлагаем вам самые выгодные условия заключения контракта в России.
-                    </p>
-                </div>
+                <h1 class="hero-title">Служба по Контракту</h1>
+                <p class="hero-subtitle">Мы предлагаем вам самые выгодные условия заключения контракта в России.</p>
                 
                 <div class="payment-summary">
-                    <h2>Общая сумма выплат без учета денежного довольствия в год составит</h2>
+                    <div class="label">Общая сумма выплат без учета денежного довольствия в год составит</div>
                     <div class="total-amount">4 100 000 ₽</div>
                     
                     <div class="row text-center">
                         <div class="col-md-4">
                             <div class="payment-card">
                                 <div class="amount">3 550 000 ₽</div>
-                                <div>сумма выплат от ХМАО-Югры</div>
+                                <div class="desc">сумма выплат от ХМАО-Югры</div>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="payment-card">
                                 <div class="amount">400 000 ₽</div>
-                                <div>сумма выплат от Министерства обороны РФ</div>
+                                <div class="desc">сумма выплат от Министерства обороны РФ</div>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="payment-card highlight">
                                 <div class="amount">150 000 ₽</div>
-                                <div>выплата от муниципального образования города Ханты-Мансийск</div>
+                                <div class="desc">выплата от муниципального образования города Ханты-Мансийск</div>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <div style="margin: 20px 0;">
-                    <p style="font-size: 1.2rem;"><strong>+ Денежное довольствие от 210 000 ₽ в месяц</strong> при выполнении боевых заданий в зоне СВО.</p>
-                    <p style="font-size: 1.1rem;"><strong>+ Списание долгов до 10 000 000 рублей.</strong></p>
+                <div class="hero-bottom-info">
+                    <span><strong>+</strong> Денежное довольствие от 210 000 ₽ в месяц</span>
+                    <span><strong>+</strong> Списание долгов до 10 000 000 рублей</span>
                 </div>
             </div>
         </div>
@@ -107,169 +95,171 @@
     <!-- ====== БЕЛЫЙ БЛОК: АХМАТ. ТЫЛОВЫЕ СПЕЦИАЛЬНОСТИ ====== -->
     <section class="white-section">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-12">
-                    
-                    <div class="main-heading-wrapper">
-                        <h2 class="main-heading">
-                            АХМАТ. ТЫЛОВЫЕ И ТЕХНИЧЕСКИЕ СПЕЦИАЛЬНОСТИ: СВЯЗЬ, ИНЖЕНЕРИЯ, РЭБ И ОБЕСПЕЧЕНИЕ
-                        </h2>
-                    </div>
+            
+            <h2 class="section-title">
+                АХМАТ. ТЫЛОВЫЕ И ТЕХНИЧЕСКИЕ СПЕЦИАЛЬНОСТИ: СВЯЗЬ, ИНЖЕНЕРИЯ, РЭБ И ОБЕСПЕЧЕНИЕ
+            </h2>
 
-                    <div class="info-main-text">
-                        <p>
-                            Фронт начинается не только на передовой. Современная война невозможна без стальной логистики, защищённой связи и технического превосходства в тылу. Подразделения «Ахмат» — это не только штурмовые группы, но и высокотехнологичная инфраструктура, где каждый специалист критически важен для победы.
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-10">
+                    <p class="lead text-center" style="font-size: 1.1rem;">
+                        Фронт начинается не только на передовой. Современная война невозможна без стальной логистики, защищённой связи и технического превосходства в тылу. Подразделения «Ахмат» — это не только штурмовые группы, но и высокотехнологичная инфраструктура, где каждый специалист критически важен для победы.
+                    </p>
+                    <p class="text-center" style="font-size: 1.1rem;">
+                        Мы набираем мужчин, готовых работать на результат в <strong>тыловых батальонах связи, инженерных подразделениях, расчётах РЭБ и батальонах материального обеспечения</strong>.
+                    </p>
+                    <p class="text-center fw-bold" style="font-size: 1.1rem;">
+                        Это твой шанс служить в элитной структуре, не находясь постоянно на нуле, получая при этом полную боевую поддержку и достойное вознаграждение.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-5">
+                <h3 class="section-subtitle">СУТЬ И КЛЮЧЕВЫЕ ЗАДАЧИ</h3>
+                <p class="lead-text" style="font-size: 1.1rem;">
+                    Твоя работа — обеспечить боевую эффективность подразделений, которые воюют впереди. Без тебя не полетит дрон, не выйдет на связь командир и не подойдут боеприпасы.
+                </p>
+            </div>
+
+            <div class="row mt-4 g-4">
+                <div class="col-md-6">
+                    <div class="spec-card">
+                        <div class="icon-wrapper icon-comm">
+                            <i class="bi bi-wifi"></i>
+                        </div>
+                        <h4 class="card-title">Батальон связи</h4>
+                        <ul>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Развёртывание и защищённое управление каналами связи</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Обеспечение устойчивого управления в условиях активного РЭБ</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Настройка и обслуживание комплексов связи, шифрование</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="spec-card">
+                        <div class="icon-wrapper icon-eng">
+                            <i class="bi bi-gear-wide-connected"></i>
+                        </div>
+                        <h4 class="card-title">Инженерный батальон</h4>
+                        <ul>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Фортификационное оборудование: блиндажи, укрытия</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Инженерная разведка маршрутов для тыловых колонн</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Минирование и разминирование (безопасность тыловых зон)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="spec-card">
+                        <div class="icon-wrapper icon-ew">
+                            <i class="bi bi-shield-shaded"></i>
+                        </div>
+                        <h4 class="card-title">РЭБ (Радиоэлектронная борьба)</h4>
+                        <ul>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Защита от FPV-дронов и барражирующих боеприпасов</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Постановка радиопомех — «глушение» каналов управления БПЛА</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Обнаружение и подавление враждебных средств связи</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="spec-card">
+                        <div class="icon-wrapper icon-log">
+                            <i class="bi bi-truck"></i>
+                        </div>
+                        <h4 class="card-title">Батальон материального обеспечения</h4>
+                        <ul>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Бесперебойная доставка боеприпасов, топлива, продовольствия</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Эвакуация неисправной техники и имущества</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Работа складов, заправка и ремонт автомобильной техники</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-5 requirements-block">
+                <h3 class="section-subtitle">ТРЕБОВАНИЯ К КАНДИДАТУ</h3>
+                <p class="fst-italic">Мы ценим мастерство, желание учиться и надёжность. Многие задачи можно освоить на месте — важнее твоё отношение и здоровье.</p>
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <ul>
+                            <li><i class="bi bi-check-lg text-primary me-2"></i> <strong>Возраст:</strong> от 18 до 45 лет</li>
+                            <li><i class="bi bi-check-lg text-primary me-2"></i> <strong>Здоровье:</strong> категория «А» или «Б»</li>
+                            <li><i class="bi bi-check-lg text-primary me-2"></i> <strong>Биография:</strong> отсутствие непогашенных судимостей</li>
+                            <li><i class="bi bi-check-lg text-primary me-2"></i> <strong>Образование:</strong> приветствуется техническое, строительное, IT или связь</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul>
+                            <li><i class="bi bi-check-lg text-primary me-2"></i> <strong>Ключевые качества:</strong> дисциплина, стрессоустойчивость, техническое мышление</li>
+                            <li><i class="bi bi-check-lg text-primary me-2"></i> <strong>Важное преимущество:</strong> права C,D,E, работа с генераторами, радиостанциями, электромонтаж, стройка, ремонт</li>
+                            <li><i class="bi bi-check-lg text-primary me-2"></i> <em>Не имеет значения предыдущий опыт контрактной службы — рассматриваются все, кто хочет работать в «Ахмате»</em></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-5">
+                <h3 class="section-subtitle">ФИНАНСОВЫЕ УСЛОВИЯ И ЛЬГОТЫ</h3>
+                <p>Мы предлагаем одни из самых конкурентных условий среди тыловых и технических специальностей.</p>
+                <div class="row mt-3 finance-grid">
+                    <div class="col-md-4">
+                        <div class="finance-item">
+                            <i class="bi bi-cash-stack text-success"></i>
+                            <h5 class="mt-2">Зарплата</h5>
+                            <p class="mb-0">от 170 000 до 250 000+ ₽/мес</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="finance-item">
+                            <i class="bi bi-gift text-primary"></i>
+                            <h5 class="mt-2">Единовременная выплата</h5>
+                            <p class="mb-0">более 1 000 000 ₽ (федеральные + региональные)</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="finance-item">
+                            <i class="bi bi-trophy text-warning"></i>
+                            <h5 class="mt-2">Премии за результат</h5>
+                            <p class="mb-0">подавление дрона, восстановление связи, спасение техники</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><i class="bi bi-shield-check text-danger me-2"></i> Статус ветерана боевых действий</li>
+                        <li class="list-group-item"><i class="bi bi-heart-pulse text-danger me-2"></i> Страховка и лечение (реабилитация при ранении)</li>
+                        <li class="list-group-item"><i class="bi bi-calendar-week text-danger me-2"></i> Регулярный ротационный отпуск</li>
+                        <li class="list-group-item"><i class="bi bi-door-closed text-danger me-2"></i> Гарантированное увольнение после контракта (перевод без согласия исключён)</li>
+                        <li class="list-group-item"><i class="bi bi-box-seam text-danger me-2"></i> Полное довольствие: связь, РЭБ-оборудование, транспорт, экипировка, питание</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="train-block mt-5">
+                <div class="train-header">
+                    <div class="train-icon">
+                        <i class="bi bi-train-front"></i>
+                    </div>
+                    <div>
+                        <p class="train-time mb-1">
+                            <span class="highlight-number">12 часов</span> поездом из Екатеринбурга
                         </p>
-                        <p>
-                            Мы набираем мужчин, готовых работать на результат в <strong>тыловых батальонах связи, инженерных подразделениях, расчётах РЭБ и батальонах материального обеспечения</strong>.
-                        </p>
-                        <p>
-                            Это твой шанс служить в элитной структуре, не находясь постоянно на нуле, получая при этом полную боевую поддержку и достойное вознаграждение.
+                        <p class="train-route mb-0">
+                            Прямой поезд №610Е «Екатеринбург – Устье-Аха»<br>
+                            Отправляется ежедневно в <strong>23:35</strong> (время местное)
                         </p>
                     </div>
-
-                    <div class="mt-5">
-                        <h3 class="section-subtitle">СУТЬ И КЛЮЧЕВЫЕ ЗАДАЧИ</h3>
-                        <p class="lead-text">
-                            Твоя работа — обеспечить боевую эффективность подразделений, которые воюют впереди. Без тебя не полетит дрон, не выйдет на связь командир и не подойдут боеприпасы.
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <p class="train-location mb-2">
+                            <i class="bi bi-geo-alt text-primary me-1"></i>
+                            <strong>Военкомат расположен в 30 метрах от станции Устье-Аха</strong>
                         </p>
-                    </div>
-
-                    <div class="row mt-4 g-4">
-                        <div class="col-md-6">
-                            <div class="card h-100 shadow-sm border-0">
-                                <div class="card-body">
-                                    <i class="bi bi-wifi" style="font-size: 2rem; color: #0d6efd;"></i>
-                                    <h4 class="card-title mt-2">Батальон связи</h4>
-                                    <ul class="list-unstyled">
-                                        <li><i class="bi bi-check-circle-fill text-success me-2"></i> Развёртывание и защищённое управление каналами связи (радиорелейная, спутниковая, КШМ)</li>
-                                        <li><i class="bi bi-check-circle-fill text-success me-2"></i> Обеспечение устойчивого управления в условиях активного РЭБ противника</li>
-                                        <li><i class="bi bi-check-circle-fill text-success me-2"></i> Настройка и обслуживание комплексов связи, шифрование и защита информации</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card h-100 shadow-sm border-0">
-                                <div class="card-body">
-                                    <i class="bi bi-gear-wide-connected" style="font-size: 2rem; color: #6c757d;"></i>
-                                    <h4 class="card-title mt-2">Инженерный батальон</h4>
-                                    <ul class="list-unstyled">
-                                        <li><i class="bi bi-check-circle-fill text-success me-2"></i> Фортификационное оборудование: блиндажи, укрытия, командные пункты в тылу</li>
-                                        <li><i class="bi bi-check-circle-fill text-success me-2"></i> Инженерная разведка маршрутов для тыловых колонн</li>
-                                        <li><i class="bi bi-check-circle-fill text-success me-2"></i> Минирование и разминирование (обеспечение безопасности тыловых зон)</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card h-100 shadow-sm border-0">
-                                <div class="card-body">
-                                    <i class="bi bi-shield-shaded" style="font-size: 2rem; color: #dc3545;"></i>
-                                    <h4 class="card-title mt-2">РЭБ (Радиоэлектронная борьба)</h4>
-                                    <ul class="list-unstyled">
-                                        <li><i class="bi bi-check-circle-fill text-success me-2"></i> Защита техники и личного состава от FPV-дронов и барражирующих боеприпасов</li>
-                                        <li><i class="bi bi-check-circle-fill text-success me-2"></i> Постановка радиопомех — «глушение» каналов управления БПЛА противника</li>
-                                        <li><i class="bi bi-check-circle-fill text-success me-2"></i> Обнаружение и подавление враждебных средств связи</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card h-100 shadow-sm border-0">
-                                <div class="card-body">
-                                    <i class="bi bi-truck" style="font-size: 2rem; color: #198754;"></i>
-                                    <h4 class="card-title mt-2">Батальон материального обеспечения (МАТО)</h4>
-                                    <ul class="list-unstyled">
-                                        <li><i class="bi bi-check-circle-fill text-success me-2"></i> Бесперебойная доставка боеприпасов, топлива, продовольствия и снаряжения</li>
-                                        <li><i class="bi bi-check-circle-fill text-success me-2"></i> Эвакуация неисправной техники и имущества</li>
-                                        <li><i class="bi bi-check-circle-fill text-success me-2"></i> Работа складов, заправка и ремонт автомобильной и спецтехники</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="mt-5 requirements-block">
-                        <h3 class="section-subtitle">ТРЕБОВАНИЯ К КАНДИДАТУ</h3>
-                        <p class="fst-italic">Мы ценим мастерство, желание учиться и надёжность. Многие задачи можно освоить на месте — важнее твоё отношение и здоровье.</p>
-                        <div class="row mt-3">
-                            <div class="col-md-6">
-                                <ul class="list-unstyled">
-                                    <li><i class="bi bi-check-lg text-primary me-2"></i> <strong>Возраст:</strong> от 18 до 45 лет</li>
-                                    <li><i class="bi bi-check-lg text-primary me-2"></i> <strong>Здоровье:</strong> категория «А» или «Б»</li>
-                                    <li><i class="bi bi-check-lg text-primary me-2"></i> <strong>Биография:</strong> отсутствие непогашенных судимостей</li>
-                                    <li><i class="bi bi-check-lg text-primary me-2"></i> <strong>Образование:</strong> приветствуется техническое, строительное, IT или связь</li>
-                                </ul>
-                            </div>
-                            <div class="col-md-6">
-                                <ul class="list-unstyled">
-                                    <li><i class="bi bi-check-lg text-primary me-2"></i> <strong>Ключевые качества:</strong> дисциплина, стрессоустойчивость, техническое мышление</li>
-                                    <li><i class="bi bi-check-lg text-primary me-2"></i> <strong>Важное преимущество:</strong> права C,D,E, работа с генераторами, радиостанциями, электромонтаж, стройка, ремонт</li>
-                                    <li><i class="bi bi-check-lg text-primary me-2"></i> <em>Не имеет значения предыдущий опыт контрактной службы — рассматриваются все, кто хочет работать в «Ахмате»</em></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="mt-5">
-                        <h3 class="section-subtitle">ФИНАНСОВЫЕ УСЛОВИЯ И ЛЬГОТЫ</h3>
-                        <p>Мы предлагаем одни из самых конкурентных условий среди тыловых и технических специальностей.</p>
-                        <div class="row mt-3">
-                            <div class="col-md-4">
-                                <div class="p-3 border rounded text-center">
-                                    <i class="bi bi-cash-stack fs-1 text-success"></i>
-                                    <h5 class="mt-2">Зарплата</h5>
-                                    <p class="mb-0">от 170 000 до 250 000+ ₽/мес</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="p-3 border rounded text-center">
-                                    <i class="bi bi-gift fs-1 text-primary"></i>
-                                    <h5 class="mt-2">Единовременная выплата</h5>
-                                    <p class="mb-0">более 1 000 000 ₽ (федеральные + региональные)</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="p-3 border rounded text-center">
-                                    <i class="bi bi-trophy fs-1 text-warning"></i>
-                                    <h5 class="mt-2">Премии за результат</h5>
-                                    <p class="mb-0">подавление дрона, восстановление связи, спасение техники</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mt-4">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><i class="bi bi-shield-check text-danger me-2"></i> Статус ветерана боевых действий</li>
-                                <li class="list-group-item"><i class="bi bi-heart-pulse text-danger me-2"></i> Страховка и лечение (реабилитация при ранении)</li>
-                                <li class="list-group-item"><i class="bi bi-calendar-week text-danger me-2"></i> Регулярный ротационный отпуск</li>
-                                <li class="list-group-item"><i class="bi bi-door-closed text-danger me-2"></i> Гарантированное увольнение после контракта (перевод без согласия исключён)</li>
-                                <li class="list-group-item"><i class="bi bi-box-seam text-danger me-2"></i> Полное довольствие: связь, РЭБ-оборудование, транспорт, экипировка, питание</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="train-block mt-5">
-                        <div class="train-icon">
-                            <i class="bi bi-train-front"></i>
-                        </div>
-                        <div class="train-info">
-                            <p class="train-time">
-                                <span class="highlight-number">12 часов</span> поездом из Екатеринбурга
-                            </p>
-                            <p class="train-route">
-                                Прямой поезд №610Е «Екатеринбург – Устье-Аха»<br>
-                                Отправляется ежедневно в <strong>23:35</strong> (время местное)
-                            </p>
-                            <p class="train-location">
-                                <i class="bi bi-geo-alt"></i>
-                                <strong>Военкомат расположен в 30 метрах от станции Устье-Аха</strong>
-                            </p>
-                            <p class="train-meet">
-                                <i class="bi bi-people"></i>
-                                Сотрудники районной администрации встретят, разместят и доставят до пункта сбора
-                            </p>
-                        </div>
+                        <p class="train-meet mb-0">
+                            <i class="bi bi-people text-primary me-1"></i>
+                            Сотрудники районной администрации встретят, разместят и доставят до пункта сбора
+                        </p>
                     </div>
                 </div>
             </div>
@@ -279,36 +269,30 @@
     <!-- ====== РАЗДЕЛ «ТАК-ЖЕ ПОМОЖЕМ ВАМ!» ====== -->
     <section class="help-section">
         <div class="container">
-            <h2 class="help-title">Так-же поможем вам!</h2>
+            <h2 class="section-title text-center mb-5">Так-же поможем вам!</h2>
             
             <div class="row justify-content-center">
                 <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body text-center">
-                            <i class="bi bi-cash-stack" style="font-size: 48px; color: #28a745;"></i>
-                            <h5 class="card-title mt-3">Списание долгов</h5>
-                            <p class="card-text">до 10.000.000 ₽ без процедур банкротства</p>
-                        </div>
+                    <div class="help-card">
+                        <i class="bi bi-cash-stack text-success"></i>
+                        <h5 class="card-title mt-3 fw-bold">Списание долгов</h5>
+                        <p class="card-text text-muted">до 10 000 000 ₽ без процедур банкротства</p>
                     </div>
                 </div>
                 
                 <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body text-center">
-                            <i class="bi bi-bank" style="font-size: 48px; color: #007bff;"></i>
-                            <h5 class="card-title mt-3">Выплаты и льготы</h5>
-                            <p class="card-text">Выплаты на детей и банковские льготы</p>
-                        </div>
+                    <div class="help-card">
+                        <i class="bi bi-bank text-primary"></i>
+                        <h5 class="card-title mt-3 fw-bold">Выплаты и льготы</h5>
+                        <p class="card-text text-muted">Выплаты на детей и банковские льготы</p>
                     </div>
                 </div>
                 
                 <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body text-center">
-                            <i class="bi bi-shield-check" style="font-size: 48px; color: #dc3545;"></i>
-                            <h5 class="card-title mt-3">Ветеран боевых действий</h5>
-                            <p class="card-text">Оформление статуса с широким пакетом преференций</p>
-                        </div>
+                    <div class="help-card">
+                        <i class="bi bi-shield-check text-danger"></i>
+                        <h5 class="card-title mt-3 fw-bold">Ветеран боевых действий</h5>
+                        <p class="card-text text-muted">Оформление статуса с широким пакетом преференций</p>
                     </div>
                 </div>
             </div>
@@ -316,23 +300,23 @@
             <!-- НОВЫЙ БЛОК С УСЛОВИЯМИ ОТ АДМИНИСТРАЦИИ КОНДИНСКОГО РАЙОНА -->
             <div class="row mt-5 justify-content-center">
                 <div class="col-md-10">
-                    <div class="card border-warning admin-benefits-card">
+                    <div class="admin-benefits-card">
                         <div class="card-header">
-                            <i class="bi bi-gift-fill"></i> Дополнительные преимущества при заключении контракта в Кондинском районе
+                            <i class="bi bi-gift-fill me-2"></i> Дополнительные преимущества при заключении контракта в Кондинском районе
                         </div>
-                        <div class="card-body">
-                            <div class="alert alert-success">
-                                <i class="bi bi-backpack"></i> <strong>Заключая контракт в Кондинском районе, военнослужащий получает дополнительно тактический рюкзак с дополнительным специальным оборудованием на 32 позиции.</strong>
+                        <div class="card-body p-4">
+                            <div class="alert alert-success border-0">
+                                <i class="bi bi-backpack me-2"></i> <strong>Заключая контракт в Кондинском районе, военнослужащий получает дополнительно тактический рюкзак с дополнительным специальным оборудованием на 32 позиции.</strong>
                             </div>
                             
-                            <h5 class="mt-3">Сотрудники Администрации Кондинского района организуют:</h5>
-                            <ul class="list-unstyled mt-3 admin-list">
-                                <li><i class="bi bi-check-circle-fill text-success"></i> встречу прибывающих кандидатов</li>
-                                <li><i class="bi bi-check-circle-fill text-success"></i> приобретение билетов на авиа, железнодорожный транспорт для кандидатов</li>
-                                <li><i class="bi bi-check-circle-fill text-success"></i> размещение в бесплатной комфортабельной гостинице с 3-х разовым питанием</li>
-                                <li><i class="bi bi-check-circle-fill text-success"></i> полное сопровождение кандидата до момента заключения контракта</li>
-                                <li><i class="bi bi-check-circle-fill text-success"></i> компенсацию стоимости проезда кандидата от места пребывания к месту заключения контракта в Кондинском районе (авиа, ЖД, автобусное сообщение, личный автотранспорт)</li>
-                                <li><i class="bi bi-check-circle-fill text-success"></i> помощь в восстановлении военного билета</li>
+                            <h6 class="mt-3 fw-bold">Сотрудники Администрации Кондинского района организуют:</h6>
+                            <ul class="admin-list mt-3">
+                                <li><i class="bi bi-check-circle-fill"></i> встречу прибывающих кандидатов</li>
+                                <li><i class="bi bi-check-circle-fill"></i> приобретение билетов на авиа, железнодорожный транспорт для кандидатов</li>
+                                <li><i class="bi bi-check-circle-fill"></i> размещение в бесплатной комфортабельной гостинице с 3-х разовым питанием</li>
+                                <li><i class="bi bi-check-circle-fill"></i> полное сопровождение кандидата до момента заключения контракта</li>
+                                <li><i class="bi bi-check-circle-fill"></i> компенсацию стоимости проезда кандидата от места пребывания к месту заключения контракта в Кондинском районе (авиа, ЖД, автобусное сообщение, личный автотранспорт)</li>
+                                <li><i class="bi bi-check-circle-fill"></i> помощь в восстановлении военного билета</li>
                             </ul>
                         </div>
                     </div>
@@ -345,15 +329,15 @@
     <section id="application-form" class="form-container">
         <div class="container">
             <h2 class="text-center mb-4">Прием заявки</h2>
-            <p class="text-center mb-4" style="color: #666;">
-                <i class="bi bi-info-circle"></i> 
+            <p class="text-center mb-4 text-muted">
+                <i class="bi bi-info-circle me-1"></i> 
                 Граждане, пришедшие по записи, обслуживаются вне очереди.<br>
                 Наш секретарь свяжется с вами для подтверждения
             </p>
             
             <div class="row justify-content-center">
-                <div class="col-md-5">
-                    <form id="contractForm" action="/send-form" method="POST">
+                <div class="col-md-6">
+                    <form id="contractForm" action="/send-form" method="POST" class="form-wrapper">
                         <div class="mb-4">
                             <label for="last_name" class="form-label">Фамилия</label>
                             <input type="text" class="form-control form-control-lg" id="last_name" name="last_name" placeholder="Иванов" required>
@@ -375,7 +359,7 @@
                             </label>
                             <input type="tel" class="form-control form-control-lg" id="phone" name="phone" placeholder="+7 (999) 123-45-67" required>
                             <div class="form-text text-muted">
-                                <i class="bi bi-exclamation-circle"></i> Обязательное поле
+                                <i class="bi bi-exclamation-circle me-1"></i> Обязательное поле
                             </div>
                         </div>
                         
@@ -396,7 +380,7 @@
                         
                         <div class="text-center mt-5">
                             <button type="submit" class="btn-apply" style="padding: 12px 40px; font-size: 18px;">
-                                <i class="bi bi-send"></i> Отправить заявку
+                                <i class="bi bi-send me-1"></i> Отправить заявку
                             </button>
                         </div>
                     </form>
@@ -410,25 +394,25 @@
         <div class="container">
             <div class="row g-4">
                 <div class="col-md-6">
-                    <div class="info-card">
-                        <h3 class="card-title">Контакты</h3>
+                    <div class="contact-card">
+                        <h3 class="card-title mb-4">Контакты</h3>
                         
-                        <div class="info-block">
-                            <div class="info-label">Телефон:</div>
+                        <div class="info-block mb-3">
+                            <div class="info-label text-muted small fw-bold text-uppercase">Телефон:</div>
                             <div class="info-value">
-                                <a href="tel:+79505171630">+7 950 517 16 30</a>
+                                <a href="tel:+79090376438" class="text-decoration-none text-dark">+7 909 037 64 38</a>
                             </div>
                         </div>
                         
-                        <div class="info-block">
-                            <div class="info-label">Email:</div>
+                        <div class="info-block mb-3">
+                            <div class="info-label text-muted small fw-bold text-uppercase">Email:</div>
                             <div class="info-value">
-                                <a href="mailto:Novikov.K.S@mail.ru">Novikov.K.S@mail.ru</a>
+                                <a href="mailto:Novikov.K.S@mail.ru" class="text-decoration-none text-dark">Novikov.K.S@mail.ru</a>
                             </div>
                         </div>
                         
-                        <div class="info-block">
-                            <div class="info-label">Адрес:</div>
+                        <div class="info-block mb-3">
+                            <div class="info-label text-muted small fw-bold text-uppercase">Адрес:</div>
                             <div class="info-value address">
                                 пгт.Междуреченский<br>
                                 ул.Днепропетровская 10<br>
@@ -437,8 +421,8 @@
                         </div>
                         
                         <div class="info-block">
-                            <div class="info-label">Прием заявок:</div>
-                            <div class="info-value highlight">
+                            <div class="info-label text-muted small fw-bold text-uppercase">Прием заявок:</div>
+                            <div class="info-value highlight fw-bold text-accent" style="color: var(--accent-color);">
                                 Круглосуточно
                             </div>
                         </div>
@@ -446,20 +430,20 @@
                 </div>
                 
                 <div class="col-md-6">
-                    <div class="info-card">
+                    <div class="contact-card">
                         <div class="map-wrapper">
                             <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1e3e7f3b7e6f8b7c9d8e7f6a5b4c3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f8a7b6c5&amp;source=constructor" 
                                     width="100%" 
-                                    height="350" 
+                                    height="100%" 
                                     frameborder="0"
                                     style="border:0;">
                             </iframe>
                         </div>
-                        <p class="map-link-wrapper">
-                            <i class="bi bi-info-circle"></i> 
+                        <p class="map-link-wrapper text-center mt-3 mb-0">
+                            <i class="bi bi-info-circle me-1"></i> 
                             <a href="https://yandex.ru/maps/?text=пгт.Междуреченский%20ул.Днепропетровская%2010" 
                                target="_blank" 
-                               class="map-link">
+                               class="text-decoration-none">
                                Открыть в Яндекс Картах
                             </a>
                         </p>
@@ -470,9 +454,9 @@
     </section>
 
     <!-- ====== ФУТЕР ====== -->
-    <footer>
+    <footer class="bg-dark text-white-50 py-4">
         <div class="container text-center">
-            <p>&copy; 2026 Служба по Контракту. Все права защищены.</p>
+            <p class="mb-0">&copy; 2026 Служба по Контракту. Все права защищены.</p>
         </div>
     </footer>
 
@@ -498,12 +482,7 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <script>
-        function toggleMenu() {
-            const navMenu = document.getElementById('navMenu');
-            navMenu.classList.toggle('show');
-        }
-    </script>
+    <!-- Ваш JS -->
+    <script src="script.js"></script>
 </body>
 </html>

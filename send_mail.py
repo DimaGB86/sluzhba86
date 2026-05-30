@@ -10,7 +10,7 @@ SMTP_SERVER = "smtp.timeweb.ru"
 SMTP_PORT = 465
 EMAIL = os.environ.get('EMAIL_USER', 'your-email@sluzhba86.ru')
 PASSWORD = os.environ.get('EMAIL_PASS', 'your_password')
-TO_EMAIL = "Novikov.K.S@mail.ru"
+TO_EMAIL = "sh_diman@inbox.ru"
 
 # --- Главная страница ---
 @app.route('/')
@@ -48,7 +48,7 @@ def send_form():
     msg['To'] = TO_EMAIL
 
     try:
-        with smtplib.SMTP_SSL(SMTP_SERVER, SMTP_PORT) as server:
+        with smtplib.SMTP_SSL(SMTP_SERVER, SMTP_PORT, timeout=10) as server:
             server.login(EMAIL, PASSWORD)
             server.send_message(msg)
         return redirect('/?success#application-form')
