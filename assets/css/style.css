@@ -116,7 +116,7 @@ h2, h3, h4 {
 /* ---------- ГЕРОЙ СЕКЦИЯ (Hero Section) ---------- */
 .hero-section {
     /* Картинка на весь блок */
-    background-image: url('/assets/img/fone.jpg');
+    background-image: url('/sluzhba86/assets/img/fone.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
